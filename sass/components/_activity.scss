@@ -1,0 +1,30 @@
+.activity {
+  padding-bottom: 94px;
+}
+.second-font {
+  @extend %secondFont;
+  margin-bottom: 50px;
+}
+.activity__list {
+  @extend %list-style;
+}
+.activity__item {
+  position: relative;
+}
+.activity__item + .activity__item {
+  margin-left: 30px;
+}
+.activity__title {
+  @extend %fourthFont;
+  @extend %centred;
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: $second-text-color;
+  margin: 0;
+}

@@ -1,0 +1,93 @@
+%primaryFont {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+%secondFont {
+  font-family: $second-font;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  color: $title-text-color;
+}
+%thirdFont {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+%fourthFont {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+%fifthFont {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  text-decoration: none;
+}
+%sixthFont {
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0;
+}
+%button {
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  color: $second-text-color;
+}
+%container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px;
+}
+%list-style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+%centred {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+%positionAbsolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

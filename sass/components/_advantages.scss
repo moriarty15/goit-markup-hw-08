@@ -1,0 +1,30 @@
+.advantages {
+  padding: 94px 0;
+  .advantages__title {
+    @extend %thirdFont;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .advantages__list {
+    @extend %list-style;
+  }
+  .advantages__item {
+    @extend %primaryFont;
+    color: $primary-text-color;
+  }
+}
+.advantages__item + .advantages__item {
+  margin-left: 30px;
+}
+
+.container {
+  @extend %container;
+}
+
+.container-min {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  @extend %centred;
+}
