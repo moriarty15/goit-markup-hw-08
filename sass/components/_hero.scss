@@ -1,32 +1,113 @@
-.hero {
-  text-align: center;
-  padding: 200px 0;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/Img.svg");
-  background-size: 1600px 600px;
-  background-repeat: no-repeat;
-  background-position: center;
+@media screen and (min-width: 480px) {
+  .hero {
+    height: 400px;
+    width: 480px;
+    padding-top: 118px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Header-mobile.svg");
+    background-size: 480px 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
-.hero__title {
-  width: 696px;
-  height: 120px;
-  font-family: Roboto;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  font-weight: 900;
-  text-align: center;
-  text-transform: uppercase;
-  color: $second-text-color;
-  margin: 0;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    height: 400px;
+    padding-top: 118px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Header-tablet.svg");
+    background-size: 768px 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    text-align: center;
+    padding: 200px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Img.svg");
+    background-size: 1600px 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-family: Roboto;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: $second-text-color;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+    font-family: Roboto;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: $second-text-color;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    height: 120px;
+    font-family: Roboto;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: $second-text-color;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .button {
-  @extend %button;
+  @include button;
 }

@@ -2,19 +2,19 @@
   padding: 94px 0;
   background-color: $team-back-color;
   .team__list {
-    @extend %list-style;
+    @include list-style;
   }
   .team__item {
     background-color: $second-text-color;
   }
   .team__item--name {
-    @extend %sixthFont;
+    @include sixthFont;
     font-weight: 500;
     color: $title-text-color;
     margin-bottom: 10px;
   }
   .team__item--post {
-    @extend %sixthFont;
+    @include sixthFont;
     color: $primary-text-color;
     margin-bottom: 16px;
   }
@@ -25,7 +25,7 @@
 }
 
 .social {
-  @extend %list-style;
+  @include list-style;
   justify-content: center;
 }
 .social__item + .social__item {
@@ -33,7 +33,7 @@
 }
 .social__link,
 .social__link--bgc {
-  @extend %centred;
+  @include centred;
   border-radius: 50%;
   fill: #afb1b8;
   width: 44px;

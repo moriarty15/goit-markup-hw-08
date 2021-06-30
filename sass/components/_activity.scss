@@ -2,11 +2,11 @@
   padding-bottom: 94px;
 }
 .second-font {
-  @extend %secondFont;
+  @include secondFont;
   margin-bottom: 50px;
 }
 .activity__list {
-  @extend %list-style;
+  @include list-style;
 }
 .activity__item {
   position: relative;
@@ -15,8 +15,8 @@
   margin-left: 30px;
 }
 .activity__title {
-  @extend %fourthFont;
-  @extend %centred;
+  @include fourthFont;
+  @include centred;
   position: absolute;
   bottom: 0;
   width: 370px;

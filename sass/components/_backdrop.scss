@@ -13,7 +13,7 @@
   pointer-events: none;
 }
 .modal {
-  @extend %positionAbsolute;
+  @include positionAbsolute;
   padding: 40px;
 
   background: #ffffff;
@@ -92,7 +92,7 @@
 
 .checkbox,
 .send {
-  @extend %centred;
+  @include centred;
 }
 .checkbox {
   margin-top: 20px;
@@ -101,7 +101,7 @@
     color: $accent-color;
   }
   .checkbox__icon {
-    @extend %centred;
+    @include centred;
     width: 16px;
     height: 15px;
     border: 2px solid $title-text-color;
@@ -114,7 +114,7 @@
     position: absolute;
   }
   .checkbox__title {
-    @extend %primaryFont;
+    @include primaryFont;
     color: $primary-text-color;
   }
 }
@@ -144,7 +144,7 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close__icon {
-  @extend %positionAbsolute;
+  @include positionAbsolute;
   .close:hover &,
   .close:focus &,
   .close:active & {

@@ -1,7 +1,7 @@
 .client {
   padding: 94px 0;
   .client__list {
-    @extend %list-style;
+    @include list-style;
   }
 }
 .client__item + .client__item {
@@ -9,7 +9,7 @@
 }
 .client__link {
   border-radius: 4px;
-  @extend %centred;
+  @include centred;
   fill: #afb1b8;
   width: 170px;
   height: 92px;

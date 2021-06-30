@@ -1,7 +1,7 @@
 .footer {
   background-color: $second-back-color;
   .footer__container {
-    @extend %container;
+    @include container;
     display: flex;
     justify-content: space-between;
     padding: 60px 15px;
@@ -20,7 +20,7 @@
   color: $second-text-color;
   background-color: $second-back-color;
   .address__item {
-    @extend %primaryFont;
+    @include primaryFont;
     color: $second-text-color;
     margin: 0;
   }
@@ -36,7 +36,7 @@
 }
 
 .contacts {
-  @extend %list-style;
+  @include list-style;
   display: block;
   margin: 0;
   padding: 0;
@@ -47,7 +47,7 @@
     background-color: $second-back-color;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
-    @extend %primaryFont;
+    @include primaryFont;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus,
@@ -98,7 +98,7 @@
 }
 .join,
 .submit__description {
-  @extend %fourthFont;
+  @include fourthFont;
   font-weight: 700;
   text-transform: uppercase;
   color: $second-text-color;

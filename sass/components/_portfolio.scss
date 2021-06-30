@@ -1,5 +1,5 @@
 .filter {
-  @extend %list-style;
+  @include list-style;
   display: flex;
   justify-content: center;
   padding-left: 0;
@@ -27,7 +27,7 @@
   }
 }
 .filter__overlay--translate {
-  @extend %positionAbsolute;
+  @include positionAbsolute;
   width: 322px;
   height: 168px;
   color: $second-text-color;
@@ -45,7 +45,7 @@
 }
 
 .collection {
-  @extend %list-style;
+  @include list-style;
   flex-wrap: wrap;
   .collection__item {
     list-style: none;
