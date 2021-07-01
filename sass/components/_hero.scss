@@ -1,7 +1,6 @@
 @media screen and (min-width: 480px) {
   .hero {
     height: 400px;
-    width: 480px;
     padding-top: 118px;
     text-align: center;
     margin-left: auto;
@@ -11,52 +10,11 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/Header-mobile.svg");
+      url("../images/Header-mobile.jpg");
     background-size: 480px 400px;
     background-repeat: no-repeat;
     background-position: center;
   }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    width: 768px;
-    height: 400px;
-    padding-top: 118px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/Header-tablet.svg");
-    background-size: 768px 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    width: 1600px;
-    height: 600px;
-    padding-top: 200px;
-    text-align: center;
-    padding: 200px 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/Img.svg");
-    background-size: 1600px 600px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-@media screen and (min-width: 480px) {
   .hero__title {
     font-family: Roboto;
     font-size: 26px;
@@ -72,7 +30,23 @@
     margin-right: auto;
   }
 }
+
 @media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 118px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Header-tablet.jpg");
+    background-size: 768px 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .hero__title {
     width: 360px;
     font-family: Roboto;
@@ -106,8 +80,23 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .hero {
+    padding-top: 200px;
+    text-align: center;
+    padding: 200px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Img.jpg");
+    background-size: 1600px 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
-
 .button {
   @include button;
 }

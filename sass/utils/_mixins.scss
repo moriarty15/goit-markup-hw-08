@@ -4,16 +4,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-@mixin secondFont {
-  font-family: $second-font;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin: 0;
-  color: $title-text-color;
-}
+
 @mixin thirdFont {
   font-family: $second-font;
   font-size: 14px;
@@ -55,7 +46,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  font-family: Roboto;
+  font-family: $second-font;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -69,18 +60,10 @@
   color: $second-text-color;
 }
 
-@mixin container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding: 0 15px;
-}
-
 @mixin list-style() {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
 }
 
 @mixin centred() {
