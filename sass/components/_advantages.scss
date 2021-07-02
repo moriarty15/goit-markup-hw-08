@@ -1,6 +1,6 @@
 @media screen and (min-width: 480px) {
   .advantages {
-    padding: 94px 0;
+    padding: 60px 0;
     .advantages__title {
       @include thirdFont;
       margin-top: 30px;
@@ -12,14 +12,24 @@
       color: $primary-text-color;
     }
   }
-  .advantages__item + .advantages__item {
-    margin-left: 30px;
-  }
+
   .advantages__list {
     @include list-style();
   }
+  .container-min {
+    width: 450px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    @include centred;
+  }
 }
-
+@media screen and (max-width: 767px) {
+  .advantages__title {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .advantages {
     padding: 94px 0;

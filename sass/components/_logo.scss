@@ -26,8 +26,30 @@
   }
   .logo__footer {
     color: $second-text-color;
+    justify-content: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .logo,
+  .logo__footer {
+    display: flex;
+    font-family: $first-font;
+    font-size: 26px;
+    line-height: 1.19;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 88px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .logo__accent,
+    .logo__footer__accent,
+    &:hover,
+    &:focus,
+    &:active {
+      color: $accent-color;
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .logo,
   .logo__footer {

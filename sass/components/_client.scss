@@ -1,20 +1,23 @@
 @media screen and (min-width: 480px) {
   .client {
-    padding: 94px 0;
+    padding: 60px 0;
     .client__list {
       @include list-style;
       display: flex;
       flex-wrap: wrap;
     }
   }
-  .client__item + .client__item {
+  .client__item:nth-child(2n) {
     margin-left: 30px;
+  }
+  .client__item:nth-child(-n + 4) {
+    margin-bottom: 30px;
   }
   .client__link {
     border-radius: 4px;
     @include centred;
     fill: #afb1b8;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     fill: #afb1b8;
