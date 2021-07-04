@@ -30,6 +30,11 @@
     margin-left: auto;
   }
 }
+@media screen and (max-width: 1199px) {
+  .auth-nav__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .auth-nav {
     display: flex;
