@@ -1,22 +1,30 @@
 @media screen and (min-width: 480px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .filter {
     @include list-style;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: start;
     padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 50px;
+  }
+  .filter__item {
+    margin-right: 8px;
+  }
+  .filter__item:nth-child(-n + 3) {
+    margin-bottom: 15px;
   }
   .filter__container {
     position: relative;
-    width: 370px;
-    height: 294px;
+    width: 100%;
     overflow: hidden;
   }
   .filter__overlay {
     display: inline-block;
     position: absolute;
-    width: 370px;
+    width: 450px;
     height: 294px;
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(0);
@@ -29,8 +37,7 @@
   }
   .filter__overlay--translate {
     @include positionAbsolute;
-    width: 322px;
-    height: 168px;
+    width: 404px;
     color: $second-text-color;
   }
   .filter__overlay--description {
@@ -41,16 +48,14 @@
     color: $second-text-color;
     margin: 0;
   }
-  .filter__item + .filter__item {
-    margin-left: 8px;
-  }
 
   .collection {
     @include list-style;
+    margin-top: 40px;
     flex-wrap: wrap;
     .collection__item {
       list-style: none;
-      width: 370px;
+      width: 100%;
       padding: 0;
       margin-right: 30px;
       margin-bottom: 30px;
@@ -60,21 +65,11 @@
           0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
       }
     }
-    .collection__item:nth-child(3n) {
-      margin-right: 0;
-    }
-    .collection__item:nth-last-child(-n + 3) {
-      margin-bottom: 0;
-    }
     .collection__link {
       color: $primary-text-color;
       text-decoration: none;
       display: inline;
     }
-  }
-  .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 
   .title {
@@ -130,7 +125,26 @@
     }
   }
 }
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .collection {
+    margin: -15px;
+    .collection__item {
+      width: calc((100% - (4 * 15px)) / 2);
+      margin: 15px;
+    }
+  }
+  .filter__overlay {
+    width: 354px;
 
+    .filter__overlay--translate {
+      width: 306px;
+    }
+  }
+}
 @media screen and (min-width: 1200px) {
   .filter {
     display: flex;

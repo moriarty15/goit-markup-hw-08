@@ -7,9 +7,6 @@
       fill: currentColor;
     }
   }
-  .auth-nav__item {
-    @include list-style;
-  }
   .auth-nav__link {
     @include fifthFont;
     font-size: 12px;
@@ -44,6 +41,9 @@
       margin-right: 10px;
       fill: currentColor;
     }
+  }
+  .auth-nav__list {
+    display: flex;
   }
 
   .auth-nav__link {
