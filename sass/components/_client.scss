@@ -29,13 +29,11 @@
 }
 @media screen and (min-width: 480px) {
   .client__list {
-    @include list-style;
     display: flex;
     flex-wrap: wrap;
   }
   .client__item {
     width: calc((100% - (4 * 15px)) / 2);
-    margin: 15px;
   }
   .client__link {
     margin: 0;
