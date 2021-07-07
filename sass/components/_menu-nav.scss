@@ -5,7 +5,6 @@
   width: 100vw;
   height: 796px;
   padding-left: 40px;
-
   background-color: $second-text-color;
   transform: translateX(100%);
 }
@@ -114,10 +113,8 @@
   flex-wrap: wrap;
   margin-top: 64px;
 }
-.social-nav__item {
-}
-.social-nav__item + .social-nav__item {
-  margin-left: 20px;
+.social-nav__item:not(:last-child) {
+  margin-right: 20px;
 }
 .social-nav__link {
   text-decoration: none;

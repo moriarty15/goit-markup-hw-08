@@ -1536,8 +1536,8 @@ img {
   margin-top: 64px;
 }
 
-.social-nav__item + .social-nav__item {
-  margin-left: 20px;
+.social-nav__item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .social-nav__link {
