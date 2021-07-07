@@ -1,17 +1,16 @@
 .client {
   padding: 60px 0;
-  .client__list {
-    @include list-style;
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-  .client__item {
-    width: calc((100% - (4 * 15px)) / 2);
-    margin: 15px;
-  }
+}
+.client__list {
+  @include list-style;
+  margin: -15px;
+}
+.client__item {
+  margin: 15px;
 }
 .client__link {
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 4px;
   @include centred;
   fill: $fill-color;
@@ -28,7 +27,20 @@
     border-color: $accent-color;
   }
 }
-
+@media screen and (min-width: 480px) {
+  .client__list {
+    @include list-style;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .client__item {
+    width: calc((100% - (4 * 15px)) / 2);
+    margin: 15px;
+  }
+  .client__link {
+    margin: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .client {
     .client__item {

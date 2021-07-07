@@ -125,6 +125,7 @@
   .social-nav__list {
     @include list-style;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 64px;
   }
   .social-nav__item {

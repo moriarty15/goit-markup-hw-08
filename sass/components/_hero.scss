@@ -28,7 +28,6 @@
   }
 }
 .hero__title {
-  width: 360px;
   font-family: Roboto;
   font-size: 26px;
   line-height: 1.61;
@@ -42,7 +41,11 @@
   margin-left: auto;
   margin-right: auto;
 }
-
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     width: 100%;

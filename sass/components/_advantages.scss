@@ -10,20 +10,23 @@
     @include primaryFont;
     color: $primary-text-color;
   }
-}
 
-.advantages__list {
-  @include list-style();
+  .advantages__list {
+    @include list-style();
+  }
+  .container-min {
+    background: #f5f4fa;
+    border-radius: 4px;
+    @include centred;
+  }
 }
-.container-min {
-  width: 450px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  @include centred;
+@media screen and (min-width: 480px) {
+  .container-min {
+    width: 450px;
+    height: 120px;
+  }
 }
-
-@media screen and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .advantages__title {
     display: flex;
     justify-content: center;
