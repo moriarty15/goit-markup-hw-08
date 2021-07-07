@@ -119,6 +119,15 @@
     }
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .collection {
+    .collection__item:nth-child(1) {
+      .title {
+        height: 146px;
+      }
+    }
+  }
+}
 @media screen and (min-width: 768px) {
   .filter {
     justify-content: center;
@@ -127,6 +136,7 @@
       margin-bottom: 0;
     }
   }
+
   .collection {
     display: flex;
     flex-wrap: wrap;
