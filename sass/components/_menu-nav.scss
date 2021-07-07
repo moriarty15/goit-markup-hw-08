@@ -1,40 +1,9 @@
-.menu__nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 796px;
-  padding-left: 40px;
-
-  background-color: $second-text-color;
-  transform: translateX(100%);
-}
-.menu__nav.is-open {
-  transform: translateX(0);
-}
-.page__header {
-  position: relative;
-}
-.menu-open {
-  display: inline-flex;
-  margin: 10px 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-.menu-close {
-  display: flex;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: 15px;
-  margin-bottom: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
 @media screen and (min-width: 768px) {
   .menu-open,
   .menu-close {
+    display: none;
+  }
+  .menu__nav {
     display: none;
   }
   .menu__tablet {
@@ -42,25 +11,46 @@
     width: 100%;
   }
 }
-@media screen and (min-width: 768px) {
-  .menu__nav {
-    display: none;
-  }
-}
 @media screen and (max-width: 767px) {
-  .menu__tablet {
-    display: none;
+  .menu__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 796px;
+    padding-left: 40px;
+
+    background-color: $second-text-color;
+    transform: translateX(100%);
   }
-  .main-nav {
-    @include centred;
-    justify-content: space-between;
+  .menu__nav.is-open {
+    transform: translateX(0);
   }
-}
-@media screen and (min-width: 480px) {
+  .page__header {
+    position: relative;
+  }
+  .menu-open {
+    display: inline-flex;
+    margin: 10px 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  .menu-close {
+    display: flex;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-bottom: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
   .site-nav--menu {
     @include list-style;
     .site-nav__link--menu {
-      font-family: Roboto;
+      font-family: $second-font;
       font-weight: 500;
       font-size: 40px;
       line-height: 1.17;
@@ -85,8 +75,7 @@
   .site-nav__item--menu:last-child {
     margin-bottom: 306px;
   }
-}
-@media screen and (min-width: 480px) {
+
   .auth-nav__item--menu {
     @include list-style;
   }
@@ -107,10 +96,16 @@
       fill: currentColor;
     }
   }
-}
-@media screen and (max-width: 767px) {
+
+  .menu__tablet {
+    display: none;
+  }
+  .main-nav {
+    @include centred;
+    justify-content: space-between;
+  }
   .auth-nav__item--menu:last-child .auth-nav__link--menu {
-    font-family: Roboto;
+    font-family: $second-font;
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
