@@ -1232,8 +1232,6 @@ img {
 
 .filter__container .filter__overlay {
   position: absolute;
-  width: 450px;
-  height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -1256,7 +1254,6 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 402px;
   color: #ffffff;
 }
 
@@ -1320,6 +1317,27 @@ img {
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 479px) {
+  .filter__container .filter__overlay {
+    width: 90vw;
+    height: 60vw;
+  }
+  .filter__container .filter__overlay--translate {
+    width: 90vw;
+    height: 60vw;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .filter__container .filter__overlay {
+    width: 450px;
+    height: 294px;
+  }
+  .filter__container .filter__overlay--translate {
+    width: 402px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
