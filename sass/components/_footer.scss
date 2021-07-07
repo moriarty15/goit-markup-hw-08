@@ -1,106 +1,105 @@
-@media screen and (min-width: 480px) {
-  .footer {
-    background-color: $second-back-color;
-    .footer__container {
-      padding: 60px 15px;
-    }
-  }
-  .address,
-  .contacts {
-    font-size: 14px;
-    line-height: 1.71;
-    list-style: none;
-    margin: 0;
-    justify-content: center;
-  }
-  .address {
-    font-style: normal;
-    margin-top: 20px;
-    margin-bottom: 60px;
-    color: $second-text-color;
-    background-color: $second-back-color;
-    .address__item {
-      @include primaryFont;
-      color: $second-text-color;
-      margin: 0;
-    }
-    .address__container {
-      width: 231px;
-      margin: 0;
-      align-self: baseline;
-    }
-    .address__item {
-      margin-bottom: 9px;
-      margin-top: 0;
-      display: flex;
-      justify-content: center;
-    }
-  }
-
-  .contacts {
-    @include list-style;
-    display: block;
-    .contacts__item {
-      display: flex;
-      justify-content: center;
-    }
-    .contacts__item:not(:last-child) {
-      margin-bottom: 9px;
-    }
-    .contacts__link {
-      background-color: $second-back-color;
-      text-decoration: none;
-      color: rgba(255, 255, 255, 0.6);
-      @include primaryFont;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover,
-      &:focus,
-      &:active {
-        color: $accent-color;
-      }
-    }
-  }
-  /* стилизация Приглашений по соц.сетям */
-  .join__container {
-    align-self: baseline;
-    min-width: 206px;
-    min-height: 80px;
-  }
-  .submit__container {
-    align-self: baseline;
-    margin-top: 60px;
-  }
-  .submit__mail {
-    display: block;
-    background-color: inherit;
-    border-radius: 4px;
-    outline: none;
-
-    width: 450px;
-    height: 50px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px 16px;
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  .submit__send {
-    fill: $second-text-color;
-    margin-left: 10px;
-  }
-  .join,
-  .submit__description {
-    @include fourthFont;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $second-text-color;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+.footer {
+  background-color: $second-back-color;
+  .footer__container {
+    padding: 60px 15px;
   }
 }
+.address,
+.contacts {
+  font-size: 14px;
+  line-height: 1.71;
+  list-style: none;
+  margin: 0;
+  justify-content: center;
+}
+.address {
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  color: $second-text-color;
+  background-color: $second-back-color;
+  .address__item {
+    @include primaryFont;
+    color: $second-text-color;
+    margin: 0;
+  }
+  .address__container {
+    width: 231px;
+    margin: 0;
+    align-self: baseline;
+  }
+  .address__item {
+    margin-bottom: 9px;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.contacts {
+  @include list-style;
+  display: block;
+  .contacts__item {
+    display: flex;
+    justify-content: center;
+  }
+  .contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .contacts__link {
+    background-color: $second-back-color;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    @include primaryFont;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus,
+    &:active {
+      color: $accent-color;
+    }
+  }
+}
+/* стилизация Приглашений по соц.сетям */
+.join__container {
+  align-self: baseline;
+  min-width: 206px;
+  min-height: 80px;
+}
+.submit__container {
+  align-self: baseline;
+  margin-top: 60px;
+}
+.submit__mail {
+  display: block;
+  background-color: inherit;
+  border-radius: 4px;
+  outline: none;
+
+  width: 450px;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 16px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.submit__send {
+  fill: $second-text-color;
+  margin-left: 10px;
+}
+.join,
+.submit__description {
+  @include fourthFont;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $second-text-color;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
     display: flex;

@@ -1,33 +1,31 @@
-@media screen and (min-width: 480px) {
-  .client {
-    padding: 60px 0;
-    .client__list {
-      @include list-style;
-      display: flex;
-      flex-wrap: wrap;
-      margin: -15px;
-    }
-    .client__item {
-      width: calc((100% - (4 * 15px)) / 2);
-      margin: 15px;
-    }
+.client {
+  padding: 60px 0;
+  .client__list {
+    @include list-style;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
-  .client__link {
-    border-radius: 4px;
-    @include centred;
-    fill: $fill-color;
-    width: 210px;
-    height: 92px;
-    border: 1px solid $fill-color;
-    fill: $fill-color;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .client__item:hover &,
-    .client__item:focus &,
-    .client__item:active & {
-      fill: $accent-color;
-      border-color: $accent-color;
-    }
+  .client__item {
+    width: calc((100% - (4 * 15px)) / 2);
+    margin: 15px;
+  }
+}
+.client__link {
+  border-radius: 4px;
+  @include centred;
+  fill: $fill-color;
+  width: 210px;
+  height: 92px;
+  border: 1px solid $fill-color;
+  fill: $fill-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .client__item:hover &,
+  .client__item:focus &,
+  .client__item:active & {
+    fill: $accent-color;
+    border-color: $accent-color;
   }
 }
 

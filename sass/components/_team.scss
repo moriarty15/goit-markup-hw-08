@@ -1,65 +1,64 @@
-@media screen and (min-width: 480px) {
-  .team {
-    padding: 60px 0;
-    background-color: $team-back-color;
-    .team__list {
-      @include list-style;
-      margin: -15px;
-    }
-    .team__item {
-      width: calc(100% - (2 * 15));
-      margin: 15px;
-      background-color: $second-text-color;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 0px 0px 4px 4px;
-    }
-    .team__item--name {
-      @include sixthFont;
-      font-weight: 500;
-      color: $title-text-color;
-      margin-bottom: 10px;
-    }
-    .team__item--post {
-      @include sixthFont;
-      color: $primary-text-color;
-      margin-bottom: 16px;
-    }
-  }
-
-  .social {
+.team {
+  padding: 60px 0;
+  background-color: $team-back-color;
+  .team__list {
     @include list-style;
-    display: flex;
-    justify-content: center;
+    margin: -15px;
   }
-  .social__item + .social__item {
-    margin-left: 10px;
+  .team__item {
+    width: calc(100% - (2 * 15));
+    margin: 15px;
+    background-color: $second-text-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
-  .social__link,
-  .social__link--bgc {
-    @include centred;
-    border-radius: 50%;
-    fill: $fill-color;
-    width: 44px;
-    height: 44px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    .social__item:hover &,
-    .social__item:focus &,
-    .social__item:active & {
-      background-color: $accent-color;
-      fill: $second-text-color;
-    }
+  .team__item--name {
+    @include sixthFont;
+    font-weight: 500;
+    color: $title-text-color;
+    margin-bottom: 10px;
   }
-  .social__link--bgc {
-    background: rgba(255, 255, 255, 0.1);
-    fill: $second-text-color;
-  }
-  .team__frame {
-    margin: 30px 0;
+  .team__item--post {
+    @include sixthFont;
+    color: $primary-text-color;
+    margin-bottom: 16px;
   }
 }
+
+.social {
+  @include list-style;
+  display: flex;
+  justify-content: center;
+}
+.social__item + .social__item {
+  margin-left: 10px;
+}
+.social__link,
+.social__link--bgc {
+  @include centred;
+  border-radius: 50%;
+  fill: $fill-color;
+  width: 44px;
+  height: 44px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social__item:hover &,
+  .social__item:focus &,
+  .social__item:active & {
+    background-color: $accent-color;
+    fill: $second-text-color;
+  }
+}
+.social__link--bgc {
+  background: rgba(255, 255, 255, 0.1);
+  fill: $second-text-color;
+}
+.team__frame {
+  margin: 30px 0;
+}
+
 @media screen and (min-width: 767px) {
   .team {
     .team__item {
