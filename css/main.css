@@ -289,7 +289,7 @@ img {
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Header-mobile 480.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header-mobile 480.jpg");
-  background-size: 480px 400px;
+  background-size: 100vw 400px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -324,11 +324,11 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 100%;
+    width: 100vw;
     height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Header-tablet 768.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header-tablet 768.jpg");
-    background-size: 768px 400px;
+    background-size: 100vw 400px;
   }
 }
 
@@ -416,13 +416,18 @@ img {
 
 @media (min-width: 480px) and (max-width: 767px) {
   .advantages__title {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 450px;
   }
 }
 
@@ -1399,7 +1404,7 @@ img {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 796px;
+  height: 100%;
   padding-left: 40px;
   background-color: #ffffff;
   -webkit-transform: translateX(100%);
@@ -1447,7 +1452,7 @@ img {
 .site-nav--menu .site-nav__link--menu {
   font-family: Roboto, sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 40px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.02em;
@@ -1519,7 +1524,7 @@ img {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #2196f3;
@@ -1571,9 +1576,6 @@ img {
 @media (min-width: 480px) and (max-width: 767px) {
   .site-nav__item--menu:last-child {
     margin-bottom: 306px;
-  }
-  .auth-nav__item--menu:last-child .auth-nav__link--menu {
-    font-size: 34px;
   }
 }
 

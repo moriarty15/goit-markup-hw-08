@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 796px;
+  height: 100%;
   padding-left: 40px;
   background-color: $second-text-color;
   transform: translateX(100%);
@@ -37,7 +37,7 @@
   .site-nav__link--menu {
     font-family: $second-font;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 40px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.02em;
@@ -92,7 +92,7 @@
   font-family: $second-font;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: $accent-color;
@@ -127,10 +127,6 @@
 @media (min-width: 480px) and (max-width: 767px) {
   .site-nav__item--menu:last-child {
     margin-bottom: 306px;
-  }
-
-  .auth-nav__item--menu:last-child .auth-nav__link--menu {
-    font-size: 34px;
   }
 }
 @media screen and (min-width: 768px) {
