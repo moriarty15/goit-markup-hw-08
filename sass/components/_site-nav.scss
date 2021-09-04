@@ -31,6 +31,18 @@
       left: 0;
     }
   }
+  .list-link::before,
+  .list-link::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Adds a fire icon in front of the link text */
+  .list-link::before {
+    margin-right: 16px;
+    background-image: url("https://image.flaticon.com/icons/svg/785/785116.svg");
+  }
   .site-nav__item + .site-nav__item {
     margin-left: 50px;
   }
